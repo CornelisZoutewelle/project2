@@ -1,0 +1,291 @@
+/*===== BASIS CSS =====*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*===== NAVIGATION =====*/
+.navigation{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b38;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px, 12px;
+    margin: 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #665DD2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.dropbtn{
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+.dropbtn::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #665DD2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn:hover::after{
+    width: 100%;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(102,93,210,0.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*===== HEADER CSS =====*/
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(27,27,56,0.7),rgba(102,93,210,0.7)), url(/assets/indexbackground.gif);
+    background-size: cover;
+}
+
+.text-box {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    color: whitesmoke;
+}
+
+.text-box h1{
+    font-size: 4em;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 2.5em;
+    color: whitesmoke;
+}
+
+/*===== GAME CARDS =====*/
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #1B1B38;
+}
+
+/*===== GAME CARD NICK =====*/
+
+.gamenick-info{
+    color: whitesmoke;
+    background-image: url(/assets/snakegame.png);
+    background-size: cover;
+    padding: 2rem 0 0;
+    max-width: 80ch;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.gamenick-content{
+    padding: 3.8em;
+    background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 0.5), hsl(0 0% 0% / 1));
+}
+
+.gamenick-title{
+    position: relative;
+    width: max-content;
+    margin-bottom: 15px;
+}
+
+.gamenick-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #665DD2;
+}
+
+.gamenick-btn{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #101010;
+    background-color: #665DD2;
+    margin-top: 15px;
+    padding: .5em 1.25em;
+    border-radius: .25em;
+    font-weight: bold;
+}
+
+/*===== GAME CARD ERIM =====*/
+.gameerim-info{
+    color: whitesmoke;
+    background-image: url(/assets/gateball.png);
+    background-size: cover;
+    padding: 2rem 0 0;
+    max-width: 80ch;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.gameerim-content{
+    padding: 3.8em;
+    background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 0.5), hsl(0 0% 0% / 1));
+}
+
+.gameerim-title{
+    position: relative;
+    width: max-content;
+    margin-bottom: 15px;
+}
+
+.gameerim-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #665DD2;
+}
+
+.gameerim-btn{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #101010;
+    background-color: #665DD2;
+    margin-top: 15px;
+    padding: .5em 1.25em;
+    border-radius: .25em;
+    font-weight: bold;
+}
+
+/*===== GAME CARD CORNELIS =====*/
+
+.gamecornelis-info{
+    color: whitesmoke;
+    background-image: url(/assets/minesweeper.png);
+    background-size: cover;
+    padding: 2rem 0 0;
+    max-width: 80ch;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gamecornelis-content{
+    padding: 4.5em;
+    background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 0.5), hsl(0 0% 0% / 1));
+}
+
+.gamecornelis-title{
+    position: relative;
+    width: max-content;
+    margin-bottom: 15px;
+}
+
+.gamecornelis-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #665DD2;
+}
+
+.gamecornelis-btn{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #101010;
+    background-color: #665DD2;
+    margin-top: 15px;
+    padding: .5em 1.25em;
+    border-radius: .25em;
+    font-weight: bold;
+}
+
+/*===== FOOTER =====*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-color: #2a2a5a;
+}
+footer img{
+   width: 175px;
+   margin-top: 7px;
+   margin-left: 100px;
+}
+.footer-links{
+    flex: 1;
+    text-align: right;
+    color: whitesmoke;
+}
+.footer-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+.footer-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+}
+.copyright{
+    margin-left: 20%;
+    margin-right: 10%;
+    color: whitesmoke;
+}
