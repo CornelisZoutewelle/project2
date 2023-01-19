@@ -1,0 +1,268 @@
+/*===== BASIS CSS =====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*===== NAVIGATION CSS =====*/
+.navigation{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b38;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px, 12px;
+    margin: 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #665DD2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.dropbtn{
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+.dropbtn::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #665DD2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn:hover::after{
+    width: 100%;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(102,93,210,0.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*===== MAIN =====*/
+body{
+    background-color:#121125;
+}
+
+p{
+    color: #FFF;;
+}
+
+.fav-teks{
+    color: #FFF;
+}
+
+.home{
+ 
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1cm;
+}
+
+h1{
+    position: relative;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    margin:2.5rem ;
+    margin-left: 4rem;
+}
+
+.page-information{
+    display: relative;
+    margin-bottom: 5vh;
+    width: 75%;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    margin:2.5rem ;
+    margin-left: 4rem;
+}
+
+.select-game{
+    
+    display :flex;
+    width: 100%;
+    height: 110vh;
+    background-color: #0D0D13;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.game1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12.5%;
+    height: 50vh;
+    width: 25%;
+    background-color: #1B1B38;
+    border: solid 1.5vh #00E0FF
+}
+
+.game2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+    height: 50vh;
+    width: 25%;
+    background-color: #1B1B38;
+    border: solid 1.5vh #FA00FF;
+}
+
+.game3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-right: 12.5%;
+    height: 50vh;
+    width: 25%;
+    background-color: #1B1B38;
+    border: solid 1.5vh #00FF66;
+}
+
+.game4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-right: 5%;
+    height: 50vh;
+    width: 25%;
+    background-color: #1B1B38;
+    border: solid 1.5vh #FF0000;
+}
+
+.game-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-image {
+    height: 30vh;
+    width: 25%;
+}
+
+.released {
+    padding-left: 5%;
+    text-align: left;
+    margin-bottom: 5vh;
+    display: relative;
+    width: 100%;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: #0D0D13;
+}
+
+.story {
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: relative;
+    width: 90%;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.mening {
+    text-align: left;
+    padding: 5%;
+    display: relative;
+    width: 100%;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #0D0D13;
+}
+
+/*===== FOOTER =====*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-color: #2a2a5a;
+}
+footer img{
+   width: 175px;
+   margin-top: 7px;
+   margin-left: 100px;
+}
+.footer-links{
+    flex: 1;
+    text-align: right;
+    color: whitesmoke;
+}
+.footer-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+.footer-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+}
+.copyright{
+    margin-left: 20%;
+    margin-right: 10%;
+    color: whitesmoke;
+}

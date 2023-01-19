@@ -1,0 +1,253 @@
+/*===== BASIS CSS =====*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*===== NAVIGATION CSS =====*/
+.navigation{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b38;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px, 12px;
+    margin: 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #665DD2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.dropbtn{
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+.dropbtn::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #665DD2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn:hover::after{
+    width: 100%;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(102,93,210,0.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*===== ABOUT =====*/
+header {
+  height: 50vh;
+  width: 100vw;
+  background-color: #2a2a5a;
+}
+
+.text-box {
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  color: whitesmoke;
+}
+
+.text-box h1{
+  font-size: 4em;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 2.5em;
+  color: whitesmoke;
+}
+
+/*===== PORTFOLIO CARDS =====*/
+.work {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1b1b38;
+    
+  display: grid;
+  align-items: center;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+}
+  
+.workContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.workContainer h2 {
+  color: #FFF;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.workContainer p {
+  font-family: "Source Sans Pro";
+  color: #FFF;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.projects {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  color: #FFF;
+  text-decoration: none;
+  width: 350px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: "Source Sans Pro";
+  margin-right: 20px;
+  margin-bottom: 25px;
+  display: grid;
+  align-items: center;
+  transition: all 0.3s ease-out;
+  min-width: 350px;
+  cursor: pointer;
+}
+
+.project:hover {
+  background-color: #101010;
+  color: white;
+  /* background-color: #101010; */
+  border-radius: 7px;
+}
+
+.project.Website {
+  background-image: linear-gradient(to right, #E54450, #E58E44);
+  color: white;
+}
+
+.project.Game {
+  background-image: linear-gradient(to right, #E54450, #E58E44);
+  color: white;
+}
+
+.project.Freelance {
+  width: 100%;
+  background-image: linear-gradient(to right, #E54450, #E58E44);
+}
+
+.project.Website:hover {
+  border-radius: 7px;
+  box-shadow: 4px 4px 0px rgba(229, 68, 80, 0.15);
+}
+
+.project.Game:hover {
+  border-radius: 7px;
+  box-shadow: 4px 4px 0px rgba(153, 44, 153, 0.15);
+}
+
+.projectContainer {
+  align-self: center;
+}
+
+.project h3 {
+  font-size: 22px;
+  margin: 0px 25px 10px 25px;
+}
+
+.project p {
+  font-size: 16px;
+  opacity: 0.7;
+  margin: 0px 25px;
+  line-height: 25px;
+}
+
+.project.Website p {
+  color: white;
+}
+
+.project.Game p {
+  color: white;
+}
+
+/*===== FOOTER =====*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-color: #2a2a5a;
+}
+footer img{
+   width: 175px;
+   margin-top: 7px;
+   margin-left: 100px;
+}
+.footer-links{
+    flex: 1;
+    text-align: right;
+    color: whitesmoke;
+}
+.footer-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+.footer-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+}
+.copyright{
+    margin-left: 20%;
+    margin-right: 10%;
+    color: whitesmoke;
+}
